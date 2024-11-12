@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style2.css">
+    <title>Game</title>
+</head>
+
+<body>
+    <header class="navbar-snake-">
+        <a class="navbar-snake_a">
+            <h2 class="navbar-snake_a_title">
+                Шкибиди-червячки
+            </h2>
+        </a>
+        <nav class="navbar-snake-nav">
+            <a class="navbar-snake-nav__team_a">
+                <span class="navbar-snake-nav__team_a_span">
+                    команда
+                </span>
+            </a>
+
+            <a class="navbar-snake-nav__forGame_a">
+                <span class="navbar-snake-nav__forGame_a_span">
+                    об игре
+                </span>
+            </a>
+            <a class="navbar-snake-nav__FAQ_a">
+                <span class="navbar-snake-nav__FAQ_a_span">
+                    ЧаВо
+                </span>
+            </a>
+            <a class="navbar-snake-nav__game_a">
+                <span class="navbar-snake-nav__game_a_span">
+                    игра
+                </span>
+            </a>
+        </nav>
+    </header>
+    <main class="main">
+
+        <section class="info-button-">
+            <div class="infobutton-div">
+                <h1 class="info-button-div__info-title">
+                    Шкибиди-червячки
+                </h1>
+                <p class="info-button-div__info-text">
+                    это новая версия<br> популярной игры «змейка»<br> которая сделана на числом<br> js, прямо у вас в
+                    браузере
+                </p>
+                <div class="info-button-div__div">
+                    <button class="info-button-div__div_start">
+                        Играть
+                    </button>
+                </div>
+            </div>
+        </section>
+        <hr color="black">
+        <section class="team-">
+            <h2 class="team-title">
+                Наша команда
+            </h2>
+            <div class="team-div">
+                <div class="team-tangy">
+                    <div class="team-tangy__titleImage">
+                        <img src="./img/page/tangy.png">
+                        <h3 class="team-tangy__titleImage__title">tangy-depth1</h3>
+                    </div>
+                    <span class="team-tangy__text">
+                        главный разработчик, а так же дизайнер, бог всего кода и всея русси. Ему
+                        подвласны все фреймворки и алгоритмы</span>
+                </div>
+
+                <div class="team-spfdrn">
+                    <div class="team-spfdrn__titleImage">
+                        <img src="./img/page/spfdrn.png">
+                        <h3 class="team-spfdrn__titleImage__title">spfDRN</h3>
+                    </div>
+                    <span class="team-spfdrn__text">
+                        Денис ( хз кто)
+                        критик и аналитик
+                        вьетнамец
+                    </span>
+                </div>
+            </div>
+        </section>
+        <hr color="black">
+        <section class="forGame-">
+            <div class="forGame-div">
+                <h2 class="forGame-title">
+                    Об игре
+                </h2>
+                <div class="forGame-fact__story">
+                    <span class="forGame-fact__story__text">
+                        Изначально змейка была<br>
+                         сделана как замена<br>
+                          проекту по предмету<br>
+                        «Разработка интерфейса<br>
+                         пользователя» </span>
+                </div>
+                <div class="forGame-fact__models">
+                    <span class="forGame-fact__models__text">
+                        Почти все<br>
+                         модельки были позаимствованы у<br>
+                          другой схожей игры
+                    </span>
+                </div>
+                <div class="forGame-fact__pepper">
+                    <span class="forGame-fact__pepper__text">
+                        Вместо кривой мышки<br> мог
+                         быть перчик чили
+                    </span>
+                </div>
+            </div>
+        </section>
+        <hr color="black">
+        <section class="faq-">
+            <h2 class="faq-title">ЧаВо</h2>
+            <div class="faq-question">
+                <details class="faq-question__update">
+                    <summary class="faq-question__update__sum">
+                        Будут ли будущие <br>
+                        обновления?
+                    </summary>
+                    Да наша команда вктивно развивает этот проект.<br>
+                    Ждите обновлений!
+                </details>
+                <details class="faq-question__friends">
+                    <summary class="faq-question__friends__sum">
+                        Есть ли возможность<br>
+                        играть с другом?
+                    </summary>
+                    Пока что такой возможности нет(<br>
+                    Но мы работаем над этим!
+                </details>
+                <details class="faq-question__devices">
+                    <summary class="faq-question__devices__sum">
+                        Можно ли играть на <br>
+                        разных устроиствах?
+                    </summary>
+                    Да наша команда позаботилась над этим<br>
+                    Вы можете играть в любимуюигру на любом девайсе!
+                </details>
+                <details class="faq-question__python">
+                    <summary class="faq-question__python__sum">Можно ли задушить питона?</summary>Разршаем!
+                </details>
+            </div>
+        </section>
+        <hr color="black">
+        <section class="game-">
+            <h2 class="game-title">Игра</h2>
+            <div class="game-playingField">
+                <canvas id="лgame">
+                </canvas>
+                <div class="game-playingField__controllers">
+                    <button class="game-playingField__controllers__up">↑</button>
+                    <button class="game-playingField__controllers__left">←</button>
+                    <button class="game-playingField__controllers__right">→</button>
+                    <button class="game-playingField__controllers__down">↓</button>
+                </div>
+            </div>
+        </section>
+        <hr color="black">
+        <section class="helpTeam-">
+            <h2 class="helpTeam-title">
+                Поддержи проект
+            </h2>
+            <div class="helpTeam-info">
+                <span class="helpTeam-info__text">
+                    Вы можете поддержать нашу команду удобным вам способом. Благодаря
+                    вашей поддержки обновления смогут выходить быстрее и качественнее
+                </span>
+                <div class="helpTeam-info__translation">
+                    <div class="helpTeam-info__translation__online_banks">
+                        <h3 class="helpTeam-info__translation__online_banks__title">
+                            Онлайн банкинг:
+                        </h3>
+                        <span class="helpTeam-info__translation__online_banks__text">
+                            2202 2050 4095 2910
+                        </span>
+                    </div>
+                    <div class="helpTeam-info__translation__ton_kepper">
+                        <h3 class="helpTeam-info__translation__ton_kepper__title">
+                            Переводом на Ton-кошелек:
+                        </h3>
+                        <span class="helpTeam-info__translation__ton_kepper__text">
+                            UQDqmSckk8lJsKbys<br>pkMeKXhYUjufsJWxjneMJyoCAFyT0_X
+                        </span>
+                    </div>
+                    <div class="helpTeam-info__translation__crypto_wallet_bitcoin">
+                        <h3 class="helpTeam-info__translation__crypto_wallet_bitcoin__title">
+                            Переводом на Bitcoin-кошелек:
+                        </h3>
+                        <span class="helpTeam-info__translation__crypto_wallet_bitcoin__text">
+                            bc1qgss3uej43k0ytpq4vkm<br>dydzjmc48s64vu4artk
+                        </span>
+                    </div>
+                    <div class="helpTeam-info__translation__crypto_wallet_ethereum">
+                        <h3 class="helpTeam-info__translation__crypto_wallet_ethereum__title">
+                            Переводом на Ethereum-кошелек:
+                        </h3>
+                        <span class="helpTeam-info__translation__crypto_wallet_ethereum__text">
+                            0xdA5bAC7180FB8e2a<br>69262c3bCf1c54e02EF2e5f9
+                        </span>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+        <hr color="black">
+    </main>
+    <footer class="footer-">
+        <div class="footer-link">
+            <a href="#">
+                <span class="footer-link__privacy">
+                    Privacy
+                </span>
+            </a>
+            <a href="#">
+                <span class="footer-link__security">
+                    Security
+                </span>
+            </a>
+            <a href="#">
+                <span class="footer-link__contact">
+                    Contact
+                </span>
+            </a>
+            <a href="#">
+                <span class="footer-link__personalInfo">
+                    Do not share my personal information
+                </span>
+            </a>
+            <a href="#">
+                <span class="footer-link__cookies">
+                    Manager Cookies
+                </span>
+            </a>
+        </div>
+        <p class="footer__copyright">
+            © 2024 C-FORSE, inc.
+        </p>
+    </footer>
+</body>
+
+<script src="./script/script.js"></script>
+
+</html>

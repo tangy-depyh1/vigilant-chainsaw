@@ -1,0 +1,8 @@
+body {
+    background-color: #000;
+    background: linear-gradient(to bottom right, #9a5f01, #FF9E01);
+}
+.game_div{
+    display: flex;
+    justify-content: center;
+}
